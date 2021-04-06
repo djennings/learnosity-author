@@ -25,7 +25,7 @@
   font-size: 24px;
   font-weight: 600;
   line-height: 28px;
-  width: auto !important;
+  width: inherit;
 }
 /* name/ref no edit end */
 
@@ -33,6 +33,14 @@
 .lrn.lrn-author .lrn-author-api-react-container .lrn-author-checkbox:checked+.lrn-author-checkbox-label:after {
   background-color: var(--primary) !important;
   border: var(--primary) !important;
+}
+
+/* save button(s) */
+.lrn .lrn-author-ui .lrn-author-save-button-group.lrn-btn-save-dropdown-active .lrn-btn-save-dropdown {
+  background-color: var(--primary);
+}
+.lrn .lrn-author-ui .lrn-author-save-button-group.lrn-btn-save-dropdown-active .lrn-btn-save-dropdown:not([disabled]):focus, .lrn .lrn-author-ui .lrn-author-save-button-group.lrn-btn-save-dropdown-active .lrn-btn-save-dropdown:not([disabled]):hover {
+  background-color: var(--primary);
 }
 
 /* nav */

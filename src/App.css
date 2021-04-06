@@ -7,7 +7,7 @@
   --primary-g: 41;
   --primary-b: 196;
   --outline: rgb(0, 0, 0, .38);
-  --secondary: #ffffff;
+  --secondary: rgba(255, 255, 255, 1);
   --secondary-hover: rgba(98, 0, 238, 0.04);
   --secondary-focus: rgba(105, 41, 196, 0.17);
   --secondary-active: rgba(105, 41, 196, 0.17);
@@ -40,7 +40,8 @@
 }
 
 .lrn .lrn-author-ui .lrn-btn-sec:focus {
-  background-color: var(--secondary-focus)
+  background-color: var(--secondary-focus);
+  border: 1px solid #6200ee;
 }
 
 .lrn .lrn-author-ui .lrn-btn-sec:active {
@@ -55,6 +56,7 @@
 .lrn-author-activity-button:focus {
   color: var(--primary) !important;
   background-color: var(--secondary-focus) !important;
+  border: 1px solid #6200ee;
 }
 
 .lrn-author-activity-button:hover {
@@ -91,6 +93,10 @@
 /* save button(s) */
 .lrn .lrn-author-ui .lrn-author-save-button-group.lrn-btn-save-dropdown-active .lrn-btn-save-dropdown {
   background-color: var(--primary);
+}
+
+.lrn.lrn-author .lrn-author-item-nav .lrn-btn {
+  text-transform: capitalize;
 }
 
 .lrn .lrn-author-ui .lrn-author-save-button-group.lrn-btn-save-dropdown-active .lrn-btn-save-dropdown:not([disabled]):hover {
@@ -225,3 +231,8 @@
 .lrn-author-row-button.active label {
   color: var(--primary);
 }
+
+/* .lrn.lrn-author .lrn-author-intro-outro-toolbar .lrn-author-activity-intro-outro {
+  background-color: transparent !important;
+  border: none;
+} */

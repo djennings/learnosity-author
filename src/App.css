@@ -1,38 +1,162 @@
-.App {
-  text-align: center;
+:root {
+  --primary: #6929C4;
+  --primary-r: 105;
+  --primary-g: 41;
+  --primary-b: 196;
+  --outline: rgb(0, 0, 0, .38);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* buttons */
+.lrn .lrn-author-ui .lrn-btn-primary {
+  background-color: var(--primary) !important;
+  border-radius: 4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.lrn .lrn-author-ui .lrn-btn-sec,
+.lrn .lrn-author-ui .lrn-btn-sec:hover {
+  background-color: #fff;
+  color: var(--primary);
+  position: relative;
+}
+/* buttons end */
+
+/* name/ref no edit end */
+.lrn-author-name-edit input[aria-label^="Activity reference"] {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  width: auto !important;
+}
+/* name/ref no edit end */
+
+/* checkbox */
+.lrn.lrn-author .lrn-author-api-react-container .lrn-author-checkbox:checked+.lrn-author-checkbox-label:after {
+  background-color: var(--primary) !important;
+  border: var(--primary) !important;
+}
+
+/* nav */
+.lrn.lrn-author .lrn-author-nav {
+  margin-left: 8.33333%;
+  text-align: left;
+}
+
+@media only screen and (max-width: 800px) {
+  .lrn.lrn-author .lrn-author-nav {
+    margin-left: 16.66666%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.lrn.lrn-author.lrn-md .lrn-author-tab-link .lrn-author-tab-header {
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+.lrn.lrn-author .lrn-author-nav.lrn-author-nav-tabs:focus, .lrn.lrn-author .lrn-author-nav.lrn-author-nav-tabs:hover, .lrn.lrn-author .lrn-author-nav li.active a {
+  color: var(--primary);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lrn.lrn-author .lrn-author-nav-tabs .lrn-active-tab-marker {
+  background-color: var(--primary);
+}
+
+.lrn.lrn-author .lrn-author-nav-tabs .active .lrn-active-tab-marker {
+  transform: scaleY(1.5)
+}
+
+/* nav end */
+
+/* add/create buttons */
+.lrn .lrn-author-ui .lrn-author-activity-button,
+.lrn .lrn-author-ui .lrn-author-activity-button:hover {
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  height: 40px;
+}
+
+.lrn-i-search:before {
+    content: '\E900';
+}
+
+.lrn-author-activity-button.lrn-btn-i-xs.lrn-btn-sec.lrn-col-xs-none.lrn-col-sm-none {
+  border: 1px solid var(--outline);
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 40px;
+  text-align: left;
+  width: 198px;
+}
+
+.lrn-author-activity-button.lrn-btn-i-xs.lrn-btn-sec.lrn-col-xs-none.lrn-col-sm-none .lrn-author-button-text {
+  position: relative;
+  visibility: hidden
+}
+
+.lrn-author-activity-button.lrn-btn-i-xs.lrn-btn-sec.lrn-col-xs-none.lrn-col-sm-none .lrn-author-button-text:after {
+  content: 'Add from Item Bank';
+  /* font-family: 'work sans'; */
+  font-size: 14px;
+  font-weight: 600;
+  left: 15px;
+  position: absolute;
+  visibility: visible;
+  white-space: nowrap;
+}
+/* add/create buttons end */
+
+/* toggle */
+.lrn .lrn-author-ui .lrn-author-toolbar-toggle .lrn-author-toggle-part {
+  border-color: var(--outline);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.lrn .lrn-author-ui .lrn-author-toolbar-toggle .lrn-author-toggle-right {
+  border-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.lrn .lrn-author-ui .lrn-author-toolbar-toggle .lrn-author-toggle-left {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.lrn .lrn-author-ui .lrn-author-toolbar-toggle .lrn-author-input:checked~.lrn-author-toggle-left, .lrn .lrn-author-ui .lrn-author-toolbar-toggle .lrn-author-input:not(:checked)~.lrn-author-toggle-right, .lrn .lrn-author-ui .lrn-author-toolbar-toggle .lrn-author-toggle-active {
+  background-color: rgba(var(--primary-r), var(--primary-g), var(--primary-b), .08);
+  border-color: var(--primary);
+  color: var(--primary) !important;
+}
+
+.lrn .lrn-author-ui .lrn-author-toolbar-toggle .lrn-author-input:checked~.lrn-author-toggle-left {
+  border-right: 1px solid var(--primary);
+}
+
+.lrn .lrn-author-ui .lrn-author-toolbar-toggle .lrn-author-toggle-right {
+  border-left: 1px solid var(--primary);
+}
+.lrn .lrn-author-ui .lrn-author-toolbar-toggle .lrn-author-input:checked~.lrn-author-toggle-right {
+  border-left: 0;
+}
+/* toggle end */
+
+/* intro/outro */
+
+.lrn.lrn-author .lrn-author-intro-outro-toolbar .lrn-author-activity-intro-outro .lrn-author-activity-intro-outro-content .lrn-author-customize-reset {
+  color: var(--primary);
+}
+
+.lrn-author-customize-labels {
+  font-size: 14px;
+  font-weight: 600;
+  height: 40px;
+  line-height: 1.5rem;
+}
+/* intro/outro end */
+
+
+/* player tab */
+.lrn-author-row-button.active label {
+  color: var(--primary);
 }

@@ -1,7 +1,8 @@
 :root {
-  --primary: #6929C4;
-  --primary-hover: #6f32c6;
-  --primary-active: #7b43cb;
+  --primary: rgba(105,41,196, 1);
+  --primary-focus: rgba(105,41,196, .83);
+  --primary-hover: rgb(111,50,198, .96);
+  --primary-active: rgba(123,67,203, .9);
   --primary-r: 105;
   --primary-g: 41;
   --primary-b: 196;
@@ -91,8 +92,13 @@
 .lrn .lrn-author-ui .lrn-author-save-button-group.lrn-btn-save-dropdown-active .lrn-btn-save-dropdown {
   background-color: var(--primary);
 }
-.lrn .lrn-author-ui .lrn-author-save-button-group.lrn-btn-save-dropdown-active .lrn-btn-save-dropdown:not([disabled]):focus, .lrn .lrn-author-ui .lrn-author-save-button-group.lrn-btn-save-dropdown-active .lrn-btn-save-dropdown:not([disabled]):hover {
-  background-color: var(--primary);
+
+.lrn .lrn-author-ui .lrn-author-save-button-group.lrn-btn-save-dropdown-active .lrn-btn-save-dropdown:not([disabled]):hover {
+  background-color: var(--primary-hover);
+}
+
+.lrn .lrn-author-ui .lrn-author-save-button-group.lrn-btn-save-dropdown-active .lrn-btn-save-dropdown:not([disabled]):focus {
+  background-color: var(--primary-focus);
 }
 
 /* nav */

@@ -1,22 +1,69 @@
 :root {
   --primary: #6929C4;
+  --primary-hover: #6f32c6;
+  --primary-active: #7b43cb;
   --primary-r: 105;
   --primary-g: 41;
   --primary-b: 196;
   --outline: rgb(0, 0, 0, .38);
+  --secondary: #ffffff;
+  --secondary-hover: rgba(98, 0, 238, 0.04);
+  --secondary-focus: rgba(105, 41, 196, 0.17);
+  --secondary-active: rgba(105, 41, 196, 0.17);
 }
 
 /* buttons */
 .lrn .lrn-author-ui .lrn-btn-primary {
   background-color: var(--primary) !important;
   border-radius: 4px;
+  color: #fff !important;
 }
 
-.lrn .lrn-author-ui .lrn-btn-sec,
-.lrn .lrn-author-ui .lrn-btn-sec:hover {
+.lrn .lrn-author-ui .lrn-btn-primary:hover,
+.lrn .lrn-author-ui .lrn-btn-primary:focus {
+  background-color: var(--primary-hover) !important;
+}
+
+.lrn .lrn-author-ui .lrn-btn-primary:active {
+  background-color: var(--primary-active) !important;
+}
+
+.lrn .lrn-author-ui .lrn-btn-sec {
   background-color: #fff;
   color: var(--primary);
   position: relative;
+}
+
+.lrn .lrn-author-ui .lrn-btn-sec:hover {
+  background-color: var(--secondary-hover)
+}
+
+.lrn .lrn-author-ui .lrn-btn-sec:focus {
+  background-color: var(--secondary-focus)
+}
+
+.lrn .lrn-author-ui .lrn-btn-sec:active {
+  background-color: var(--secondary-active)
+}
+
+.lrn-author-activity-button {
+  color: var(--primary) !important;
+  background-color: var(--secondary) !important;
+} 
+
+.lrn-author-activity-button:focus {
+  color: var(--primary) !important;
+  background-color: var(--secondary-focus) !important;
+}
+
+.lrn-author-activity-button:hover {
+  color: var(--primary) !important;
+  background-color: var(--secondary-hover) !important;
+}
+
+.lrn-author-activity-button:active {
+  color: var(--primary) !important;
+  background-color: var(--secondary-active) !important;
 }
 /* buttons end */
 
@@ -30,7 +77,12 @@
 /* name/ref no edit end */
 
 /* checkbox */
-.lrn.lrn-author .lrn-author-api-react-container .lrn-author-checkbox:checked+.lrn-author-checkbox-label:after {
+.lrn-author-checkbox:checked+.lrn-author-checkbox-label:after {
+  background-color: var(--primary) !important;
+  border: var(--primary) !important;
+}
+
+.lrn.lrn-author .lrn-item-for-activity-list .lrn-check-box-wrapper .lrn-check-box-input:checked+.lrn-i-tick {
   background-color: var(--primary) !important;
   border: var(--primary) !important;
 }
@@ -162,7 +214,6 @@
   line-height: 1.5rem;
 }
 /* intro/outro end */
-
 
 /* player tab */
 .lrn-author-row-button.active label {

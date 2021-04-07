@@ -153,17 +153,13 @@
     content: '\E900';
 }
 
-.lrn-author-activity-button.lrn-btn-i-xs.lrn-btn-sec,
-.lrn-author-activity-button {
+.lrn-author-activity-button.lrn-btn-i-xs.lrn-btn-sec {
   border: 1px solid var(--outline);
   border-radius: 4px !important;
   box-sizing: border-box;
   color: var(--primary) !important;
   height: 40px !important;
   text-align: left;
-}
-
-.lrn-author-activity-button.lrn-btn-i-xs.lrn-btn-sec {
   width: 198px;
 }
 

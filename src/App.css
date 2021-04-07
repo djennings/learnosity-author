@@ -18,6 +18,7 @@
   background-color: var(--primary) !important;
   border-radius: 4px;
   color: #fff !important;
+  font-family: 'Work Sans';
 }
 
 .lrn .lrn-author-ui .lrn-btn-primary:hover,
@@ -32,6 +33,7 @@
 .lrn .lrn-author-ui .lrn-btn-sec {
   background-color: #fff;
   color: var(--primary);
+  font-family: 'Work Sans';
   position: relative;
 }
 
@@ -51,6 +53,7 @@
 .lrn-author-activity-button {
   color: var(--primary) !important;
   background-color: var(--secondary) !important;
+  font-family: 'Work Sans';
 } 
 
 .lrn-author-activity-button:focus {
@@ -72,6 +75,7 @@
 
 /* name/ref no edit end */
 .lrn-author-name-edit input[aria-label^="Activity reference"] {
+  font-family: 'Work Sans';
   font-size: 24px;
   font-weight: 600;
   line-height: 28px;
@@ -80,6 +84,10 @@
 /* name/ref no edit end */
 
 /* checkbox */
+.lrn-author-checkbox-container .lrn-author-checkbox-label {
+  font-family: 'Work Sans' !important;
+}
+
 .lrn-author-checkbox:checked+.lrn-author-checkbox-label:after {
   background-color: var(--primary) !important;
   border: var(--primary) !important;
@@ -93,9 +101,11 @@
 /* save button(s) */
 .lrn .lrn-author-ui .lrn-author-save-button-group.lrn-btn-save-dropdown-active .lrn-btn-save-dropdown {
   background-color: var(--primary);
+  font-family: 'Work Sans';
 }
 
 .lrn.lrn-author .lrn-author-item-nav .lrn-btn {
+  font-family: 'Work Sans';
   text-transform: capitalize;
 }
 
@@ -120,6 +130,7 @@
 }
 
 .lrn.lrn-author.lrn-md .lrn-author-tab-link .lrn-author-tab-header {
+  font-family: 'Work Sans';
   font-weight: 600;
 }
 
@@ -166,7 +177,7 @@
 
 .lrn-author-activity-button.lrn-btn-i-xs.lrn-btn-sec.lrn-col-xs-none.lrn-col-sm-none .lrn-author-button-text:after {
   content: 'Add from Item Bank';
-  /* font-family: 'work sans'; */
+  font-family: 'Work Sans';
   font-size: 14px;
   font-weight: 600;
   left: 15px;
@@ -180,6 +191,7 @@
 .lrn .lrn-author-ui .lrn-author-toolbar-toggle .lrn-author-toggle-part {
   border-color: var(--outline);
   border-radius: 4px;
+  font-family: 'Work Sans';
   font-size: 14px;
 }
 
@@ -220,6 +232,7 @@
 }
 
 .lrn-author-customize-labels {
+  font-family: 'Work Sans';
   font-size: 14px;
   font-weight: 600;
   height: 40px;

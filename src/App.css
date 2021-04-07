@@ -87,6 +87,15 @@
 /* checkbox end */
 
 /* save button(s) */
+.lrn-author-save-button-group .lrn-btn-save.lrn-btn.lrn-btn-primary {
+  height: 55px !important;
+}
+
+.lrn-author-save-button-group .lrn-btn-save:hover.lrn-btn.lrn-btn-primary,
+.lrn-btn-save-dropdown:hover {
+  background-color: var(--primary-hover) !important;
+}
+
 .lrn-author-save-button-group.lrn-btn-save-dropdown-active .lrn-btn-save-dropdown {
   background-color: var(--primary);
   font-family: 'Work Sans';
